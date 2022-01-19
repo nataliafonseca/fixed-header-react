@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Header } from "./components/Header";
+import { Section } from "./components/Section";
 
 function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function scrollPosition() {
+      window.scrollY > 0 ? setScrolled(true) : setScrolled(false);
+    }
+
+    window.addEventListener("scroll", scrollPosition);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header scrolled={scrolled} />
+      <Section />
     </div>
   );
 }

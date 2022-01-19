@@ -1,0 +1,50 @@
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  transition: all 0.4s ease 0s;
+}
+
+.scrolled {
+  background-color: white;
+  height: 80px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo span {
+  font-size: 24px;
+  color: rgb(221, 28, 28);
+  font-weight: bold;
+  border: 0px solid #ccc;
+}
+
+.menu {
+  margin-right: 30px;
+  border: 0px solid #ccc;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(221, 218, 28);
+  opacity: 1;
+}
+
+.menu li a:hover {
+  opacity: 0.7;
+}
