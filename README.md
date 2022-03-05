@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Fixed Header - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Example of how to make a website with a fixed header in react, following on [Programador Espartano's youtube tutorial](https://www.youtube.com/watch?v=r-f5FQp3tMw).
 
 ## Available Scripts
 
